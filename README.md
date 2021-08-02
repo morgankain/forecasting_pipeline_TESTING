@@ -2,7 +2,8 @@
 
 Very first sketches of an automated forecasting pipeline to eventually be used in future scientific projects.
 The current code:
-  1) grabs the price of the Magic the Gathering card "Polluted Delta" from mtggoldfish.com via raw html page source
+  1) grabs the price of a Magic the Gathering card from mtggoldfish.com via raw html page source
+  	-- the page of the card must be defined in web_url.txt
   2) conducts a few steps of command line txt processing to get a data frame for R
   3) cleans the price data over time in R
   4) fits a very simple random walk model in Stan

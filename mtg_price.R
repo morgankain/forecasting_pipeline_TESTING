@@ -65,7 +65,7 @@ stan.fit.summary.pred <- stan.fit.summary.pred %>% mutate(
 
 gg1 <- ggplot(price.out) + 
   geom_line(aes(date, price)) + 
-  xlab("Date") + ylab("Price (USD)") + ggtitle("Polluted Delta (Onslaught)") +
+  xlab("Date") + ylab("Price (USD)") + 
   geom_ribbon(data = stan.fit.summary.pred
     , aes(date, ymin = lwr, ymax = upr)
     , alpha = 0.25
